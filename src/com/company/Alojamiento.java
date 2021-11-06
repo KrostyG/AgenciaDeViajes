@@ -18,7 +18,6 @@ public class Alojamiento {
         this.alojamiento4 = alojamiento4;
     }
 
-    Scanner sc = new Scanner(System.in);
 
     public String getAlojamiento1() {
         return alojamiento1;

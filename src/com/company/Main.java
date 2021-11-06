@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Pasaje pasaje = new Pasaje();
         Alojamiento alojamiento= new Alojamiento();
-
+        Cliente cl = new Cliente();
+        cl.ingresarCliente();
         /*Cliente cliente = new Cliente();
         Pasaje pasaje = new Pasaje();
         Alojamiento alojamiento= new Alojamiento();

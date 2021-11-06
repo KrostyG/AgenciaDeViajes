@@ -1,8 +1,12 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Paquete {
     private float descuento;
 
-    Pasaje pasaje = new Pasaje();
-    Alojamiento alojamiento= new Alojamiento();
-}
+
+
+    }
+
+
