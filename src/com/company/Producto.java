@@ -14,7 +14,7 @@ public class Producto {
     Pasaje pasaje = new Pasaje();
     Alojamiento alojamiento= new Alojamiento();
     Scanner sc = new Scanner(System.in);
-
+ //DEVELOP
     public Producto(int codigo, String descripcion, float precio, String fecha, String compañia, String destino, String nomAlojamiento) {
         this.codigo = codigo;
         this.descripcion = descripcion;
