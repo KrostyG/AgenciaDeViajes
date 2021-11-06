@@ -1,15 +1,40 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Producto {
     private int codigo;
     private String descripcion;
     private float precio;
+    private String fecha;
+    private String compañia;
+    private String destiono;
+    private String nomAlojamiento;
 
-    public Producto(int codigo, String descripcion, float precio) {
+    Pasaje pasaje = new Pasaje();
+    Alojamiento alojamiento= new Alojamiento();
+    Scanner sc = new Scanner(System.in);
+
+    public Producto(int codigo, String descripcion, float precio, String fecha, String compañia, String destino, String nomAlojamiento) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
+        this.fecha = fecha;
+        this.compañia = compañia;
+        this.destiono = destino;
+        this.nomAlojamiento = nomAlojamiento;
     }
+
+
+
+
+
+
+
+
+
+
+
 
     public int getCodigo() {
         return codigo;
