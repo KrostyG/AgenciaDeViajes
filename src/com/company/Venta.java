@@ -14,8 +14,10 @@ public class Venta {
     }
 
     public void generarVenta(){
+
         countVenta=countVenta+1;
     }
+
 
     public int getCountVenta() {
         return countVenta;

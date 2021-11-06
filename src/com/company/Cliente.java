@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Cliente {
     private int dni;
     private String nombre;
@@ -8,7 +10,7 @@ public class Cliente {
     private int venta;
 
     Venta v = new Venta();
-
+    Scanner sc = new Scanner(System.in);
 
     public Cliente() {
         this.dni = dni;
@@ -16,6 +18,26 @@ public class Cliente {
         this.telefono = telefono;
         this.mail = mail;
         this.venta=v.getNum();
+    }
+    public void ingresarCliente(){
+        System.out.println("Bienvenido A la agencia de Viajes **[Krosty Fly]**");
+
+       System.out.println("Por favor ingresa tu numero de cliente");
+        int dni= sc.nextInt();
+        setDni(dni);
+        sc.skip("\n");
+
+        System.out.println("Ingresa tu nombre completo");
+        String s= sc.nextLine();
+        setNombre(s);
+
+        System.out.println("Ingresa tu numero telefonico");
+        String telefono= sc.nextLine();
+        setTelefono(telefono);
+
+        System.out.println("Ingresa tu Mail");
+        String mail= sc.nextLine();
+        setMail(mail);
     }
 
     public int getVenta() {
