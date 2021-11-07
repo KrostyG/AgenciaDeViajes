@@ -1,8 +1,20 @@
 package com.company;
 
-public class Paquete {
+import java.util.Scanner;
+
+public class Paquete extends Producto{
+
     private float descuento;
 
-    Pasaje pasaje = new Pasaje();
-    Alojamiento alojamiento= new Alojamiento();
+
+    public Paquete(float descuento) {
+        this.descuento = descuento;
+    }
+
+    public Paquete(int codigo, String descripcion, float precio, float descuento) {
+        super(codigo, descripcion, precio);
+        this.descuento = descuento;
+    }
 }
+
+
