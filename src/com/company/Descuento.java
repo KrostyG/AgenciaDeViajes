@@ -1,10 +1,13 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Descuento {
     private int descuento;
     private int descuento1=5;
     private int descuento2=3;
     private int descuento3=5;
+
 
     public Descuento() {
         this.descuento = descuento;
@@ -12,6 +15,8 @@ public class Descuento {
         this.descuento2 = descuento2;
         this.descuento3 = descuento3;
     }
+
+
 
     public int getDescuento() {
         return descuento;
