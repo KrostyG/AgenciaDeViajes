@@ -8,21 +8,16 @@ public class Producto {
     private float precio;
 
 
-    Pasaje pasaje = new Pasaje();
-    Alojamiento alojamiento= new Alojamiento();
-    Scanner sc = new Scanner(System.in);
-
-    public Producto(){
-
-    };
-
-    //VUELO//
     public Producto(int codigo, String descripcion, float precio) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
+    }
+
+    public Producto() {
 
     }
+
 
     public int getCodigo() {
         return codigo;

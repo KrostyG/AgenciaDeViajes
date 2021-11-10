@@ -1,43 +1,23 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-        Pasaje pasaje = new Pasaje();
-        Alojamiento alojamiento= new Alojamiento();
-        Cliente cl = new Cliente();
-        cl.ingresarCliente();
-        /*Cliente cliente = new Cliente();
-        Pasaje pasaje = new Pasaje();
-        Alojamiento alojamiento= new Alojamiento();
-        Venta venta = new Venta();
-        cliente.ingresarCliente();
-        alojamiento.selectAlojamiento();
-        System.out.println(pasaje.getCompañia1());*/
+    //Paquete paquete = new Paquete();
 
+        Agencia agencia = Agencia.getInstancia();
 
+        Cliente cliente1 = new Cliente();
+        Cliente cliente2 = new Cliente();
 
+        agencia.getListClientes().add(cliente1);
+        agencia.getPasajes().add(new Pasaje());
 
+        Agencia agencia2 = Agencia.getInstancia();
 
+        Agencia agencia3 = Agencia.getInstancia();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*Cliente cliente = new Cliente();
-        Scanner sc = new Scanner(System.in);
-        cliente.setDni(sc.nextInt());
-        System.out.println(cliente.getDni());*/
+        System.out.println(agencia);
+        System.out.println(agencia);
     }
 }

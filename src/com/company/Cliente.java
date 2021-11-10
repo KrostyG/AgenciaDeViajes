@@ -9,6 +9,7 @@ public class Cliente {
     private String mail;
     private int venta;
 
+
     Venta v = new Venta();
     Scanner sc = new Scanner(System.in);
 

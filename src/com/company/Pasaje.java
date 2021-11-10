@@ -6,17 +6,10 @@ public class Pasaje extends Producto{
 
     private String fecha;
     private String compania;
-    private int destino;
+    private String destino;
 
-    Scanner sc = new Scanner(System.in);
 
-    public Pasaje(String fecha, String compania, int destino) {
-        this.fecha = fecha;
-        this.compania = compania;
-        this.destino = destino;
-    }
-
-    public Pasaje(int codigo, String descripcion, float precio, String fecha, String compania, int destino) {
+    public Pasaje(int codigo, String descripcion, float precio, String fecha, String compania, String destino) {
         super(codigo, descripcion, precio);
         this.fecha = fecha;
         this.compania = compania;
@@ -24,7 +17,6 @@ public class Pasaje extends Producto{
     }
 
     public Pasaje() {
-
     }
 
     public String getFecha() {
@@ -43,11 +35,11 @@ public class Pasaje extends Producto{
         this.compania = compania;
     }
 
-    public int getDestino() {
+    public String getDestino() {
         return destino;
     }
 
-    public void setDestino(int destino) {
+    public void setDestino(String destino) {
         this.destino = destino;
     }
 

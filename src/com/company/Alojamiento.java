@@ -6,14 +6,12 @@ public class Alojamiento extends Producto{
 
     private String nombreAlojamiento;
 
-    public Alojamiento(String nombreAlojamiento) {
-        this.nombreAlojamiento = nombreAlojamiento;
-    }
 
     public Alojamiento(int codigo, String descripcion, float precio, String nombreAlojamiento) {
         super(codigo, descripcion, precio);
         this.nombreAlojamiento = nombreAlojamiento;
     }
+
 
     public Alojamiento() {
 
